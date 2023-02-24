@@ -40,6 +40,12 @@ class _GoogleMapsState extends State<GoogleMaps> {
         appBar: AppBar(
           title: const Text('Google Office Locations'),
           elevation: 2,
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
         ),
         body: GoogleMap(
           onMapCreated: _onMapCreated,
