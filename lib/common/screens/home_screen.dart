@@ -13,7 +13,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final List<bool> _isExpanded = [false, false, false, false, false];
+  final List<bool> _isExpanded = List<bool>.filled(menu.length, false);
 
   @override
   Widget build(BuildContext context) {
@@ -86,7 +86,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                       ),
                                       child: Image.asset(
                                         menu[index]['icon'],
-                                        color: Palette.firebaseYellow,
                                         //   Palette.firebaseYellow.withOpacity(
                                         // screensMap[menu[index].name] != null
                                         //     ? 1.0

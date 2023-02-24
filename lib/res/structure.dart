@@ -200,4 +200,18 @@ List<Map<String, dynamic>> menu = [
       },
     ]
   },
+  {
+    'name': 'Maps',
+    'icon': FireAssets.mapLogo,
+    'screens': [
+      {
+        'name': 'Google Maps',
+        'icon': const Icon(
+          Icons.map_rounded,
+          color: Palette.firebaseNavy,
+        ),
+        'widget': null,
+      },
+    ]
+  },
 ];
